@@ -1,0 +1,207 @@
+body {
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+}
+
+:root {
+	--bs-primary-rgb: 16, 76, 186;
+	--bs-link-color-rgb: 9, 29, 62;
+	--bs-link-hover-color-rgb: 16, 76, 186;
+}
+
+.btn-primary {
+	--bs-btn-color: #fff;
+	--bs-btn-bg: #104CBA;
+	--bs-btn-border-color: #104CBA;
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: #0b5ed7;
+	--bs-btn-hover-border-color: #0a58ca;
+	--bs-btn-focus-shadow-rgb: 49, 132, 253;
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: #0a58ca;
+	--bs-btn-active-border-color: #0a53be;
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: #fff;
+	--bs-btn-disabled-bg: #104CBA;
+	--bs-btn-disabled-border-color: #104CBA;
+}
+
+.navbar {
+	--bs-navbar-color: rgba(var(--bs-link-color-rgb), 1);
+	--bs-navbar-hover-color: rgba(var(--bs-link-hover-color-rgb), 1);
+	--bs-navbar-nav-link-padding-x: 1rem;
+	--bs-navbar-toggler-padding-y: 0.5rem;
+	--bs-navbar-toggler-border-color: rgba(var(--bs-primary-rgb), 1);
+	--bs-navbar-toggler-focus-width: 0rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 10px rgba(var(--bs-primary-rgb), 0.5);
+	
+}
+
+.navbar-nav {
+	--bs-nav-link-font-weight: 500;
+}
+
+.navbar-brand img {
+	height: 72px;
+}
+
+.video-background {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	max-width: auto;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	z-index: -2;
+}
+
+#main-banner {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #FFF;
+	overflow: hidden;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		background: rgba(0, 0, 0, 0.2);
+		z-index: -1;
+	}
+}
+
+#main-banner h1 {
+	font-size: 4rem;
+	font-weight: 800;
+}
+
+#about {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+.about-img {
+	width: 100%;
+	height: 500px;
+	background-image: url('../images/about-img.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#products {
+	padding-top: 120px;
+	padding-bottom: 120px;
+	background-color: #E7EEF8;
+	background-image: url('../images/products-bg.png');
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: 50px;
+	background-size: cover;
+}
+
+.product-block {
+	background-image: url('../images/globe.webp');
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position-x: 95%;
+	background-position-y: center;
+}
+
+.product-img-block {
+	width: 100%;
+	height: 290px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.product-img-01 {
+	background-image: url('../images/product-img-01.jpg');
+}
+
+.product-img-02 {
+	background-image: url('../images/product-img-02.jpg');
+}
+
+.product-img-03 {
+	background-image: url('../images/product-img-03.jpg');
+}
+
+#numbers {
+	padding-top: 120px;
+	padding-bottom: 200px;
+	background-color: #091D3E;
+	background-image: url('../images/numbers-bg.png');
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: center;
+	background-size: cover;
+}
+
+#how-thinking {
+	margin-top: -120px;
+}
+
+.how-banner {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background-image: url('../images/how-thinking-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#magic-elements {
+	padding-top: 120px;
+	padding-bottom: 120px;
+	background-color: #FFF;
+	background-image: url('../images/numbers-bg.png');
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: center;
+	background-size: cover;
+}
+
+#global-presence {
+	padding-top: 120px;
+	padding-bottom: 120px;
+	background-color: #E7EEF8;
+}
+
+#contact {
+	padding-top: 160px;
+	padding-bottom: 160px;
+	background-color: #091D3E;
+	background-image: url('../images/contact-bg.jpg');
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: center;
+	background-size: cover;
+
+}
+
+.contact-block {
+	min-height: 320px;
+}
+
+footer {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #15101E;
+	text-align: center;
+}
